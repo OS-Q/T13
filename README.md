@@ -33,6 +33,11 @@
 
 ## 项目组成
 
+
+#### test
+
+目录下包括不同平台的测试代码，用于测试云端MQ环境是否正常
+
 #### RabbitMQ
 
 RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统，用erlang语言开发，遵循Mozilla Public License开源协议。
