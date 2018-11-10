@@ -1,4 +1,12 @@
-﻿[![sites](docs/os-q.png)](http://www.os-q.com)
+﻿# MQ-Q:[OS-Q通信组件](https://github.com/OS-Q/MQ-Q) 
+
+OS-Q系统消息队列
+
+[![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
+
+#### 更多关于：[OS-Q](https://github.com/OS-Q/OS-Q) 可访问 www.OS-Q.com
+
+---
 
 # MQ
 
@@ -42,7 +50,14 @@
 
 ---
 
-## RabbitMQ
+### ZeroMQ
+
+ZeroMQ号称是“史上最快的消息队列”，基于c语言开发的，实时流处理sorm的task之间的通信就是用的zeroMQ。
+
+ZMQ(ZeroMQ简称)是一个简单好用的传输层，像框架一样的一个socket library，他使得Socket编程更加简单、简洁和性能更高。是一个消息处理队列库，可在多个线程、内核和主机盒之间弹性伸缩。
+
+
+### RabbitMQ
 
  RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统，用erlang语言开发，遵循Mozilla Public License开源协议。
 
