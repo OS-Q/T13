@@ -1,6 +1,6 @@
-﻿# MQ-Q:[OS-Q通信组件](https://github.com/OS-Q/MQ-Q) 
+﻿# MQ-Q:[OS-Q消息组件](https://github.com/OS-Q/MQ-Q) 
 
-OS-Q系统消息队列
+MQ-Q用于
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
@@ -41,25 +41,12 @@ OS-Q系统消息队列
 
 ---
 
-# 项目组成
+## 项目组成
 
 
-## client
+### [RabbitMQ](https://github.com/OS-Q/RabbitMQ) 
 
-目录下包括不同平台的client代码，用于测试云端MQ环境是否正常
-
----
-
-### ZeroMQ
-
-ZeroMQ号称是“史上最快的消息队列”，基于c语言开发的，实时流处理sorm的task之间的通信就是用的zeroMQ。
-
-ZMQ(ZeroMQ简称)是一个简单好用的传输层，像框架一样的一个socket library，他使得Socket编程更加简单、简洁和性能更高。是一个消息处理队列库，可在多个线程、内核和主机盒之间弹性伸缩。
-
-
-### RabbitMQ
-
- RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统，用erlang语言开发，遵循Mozilla Public License开源协议。
+ RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统，用erlang语言开发，遵循Mozilla Public License开源协议。选定为云端平台组件
 
 #### 概念说明：
 
@@ -74,8 +61,33 @@ ZMQ(ZeroMQ简称)是一个简单好用的传输层，像框架一样的一个soc
 - channel：消息通道，在客户端的每个连接里，可建立多个channel，每个channel代表一个会话任务。
 
 
+---
+
+### [ZeroMQ](https://github.com/OS-Q/ZeroMQ) 
+
+ZeroMQ号称是“史上最快的消息队列”，基于c语言开发的，实时流处理sorm的task之间的通信就是用的zeroMQ。选定为边缘端平台组件
+
+ZMQ(ZeroMQ简称)是一个简单好用的传输层，像框架一样的一个socket library，他使得Socket编程更加简单、简洁和性能更高。是一个消息处理队列库，可在多个线程、内核和主机盒之间弹性伸缩。
+
+特点： 高到离谱的吞吐量、可自行开发持久化、支持数据量较小的持久化、不过只是保存到内存中。 
+除了点对点 即：请求-应答模式 是一对一 、不可有消息丢失 、其他都没有对消息丢失做强烈的保证、 
+官方给出的观点：我们希望消息的尽快送达、而不介意消息的丢失
+
+zeromq的目标是成为网络协议栈的一部分、进而进军linux 内核 、所以与Rabbit Active 有着本质以及目标的区别
 
 ---
+
+### client
+
+目录包括不同平台的client代码，用于测试云端MQ环境是否正常
+
+---
+
+##  锻造最美之器
+
+##  www.OS-Q.com     |    qitas@qitas.cn
+
+
 
 ## Mosquitto
 
