@@ -1,24 +1,20 @@
 ﻿# MQ-Q:[OS-Q消息组件](https://github.com/OS-Q/MQ-Q) 
 
-MQ-Q用于
+MQ-Q用于系统互联网络管道通信
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
-#### 更多关于：[OS-Q](https://github.com/OS-Q/OS-Q) 可访问 www.OS-Q.com
+#### 更多关于：[OS-Q系统](https://github.com/OS-Q/OS-Q)访问 www.OS-Q.com
 
 ---
 
-# MQ
+## MQ(Message Queue)
 
-消息总线（Message Queue），后文称MQ，是一种跨进程的通信机制，用于上下游传递消息。
-
-## 简介
+MQ消息总线，是一种跨进程的通信机制，用于上下游传递消息。
 
 在互联网架构中，MQ是一种非常常见的上下游“逻辑解耦+物理解耦”的消息通信服务。
 
 使用了MQ之后，消息发送上游只需要依赖MQ，逻辑上和物理上都不用依赖其他服务。
-
----
 
 #### MQ优点
 
@@ -27,8 +23,6 @@ MQ-Q用于
 * 松耦合，对MQ的调用不依赖于任何其它应用，没有任何依赖或者时序要求。
 
 * 在任何应用程序中以接近零的消耗，不需要任何其他依赖就可以链接的库，能运行在任何操作系统上，并能用任何编程语言开展。
-
----
 
 #### MQ缺点
 
@@ -44,7 +38,7 @@ MQ-Q用于
 ## 项目组成
 
 
-### [RabbitMQ](https://github.com/OS-Q/RabbitMQ) 
+### [RabbitMQ](https://github.com/rabbitmq) 
 
  RabbitMQ是一个在AMQP基础上完成的，可复用的企业消息系统，用erlang语言开发，遵循Mozilla Public License开源协议。选定为云端平台组件
 
@@ -63,7 +57,7 @@ MQ-Q用于
 
 ---
 
-### [ZeroMQ](https://github.com/OS-Q/ZeroMQ) 
+### [ZeroMQ](hhttps://github.com/zeromq) 
 
 ZeroMQ号称是“史上最快的消息队列”，基于c语言开发的，实时流处理sorm的task之间的通信就是用的zeroMQ。选定为边缘端平台组件
 
@@ -73,28 +67,19 @@ ZMQ(ZeroMQ简称)是一个简单好用的传输层，像框架一样的一个soc
 除了点对点 即：请求-应答模式 是一对一 、不可有消息丢失 、其他都没有对消息丢失做强烈的保证、 
 官方给出的观点：我们希望消息的尽快送达、而不介意消息的丢失
 
-zeromq的目标是成为网络协议栈的一部分、进而进军linux 内核 、所以与Rabbit Active 有着本质以及目标的区别
+zeromq的目标是成为网络协议栈的一部分、进而进军linux 内核 、所以与Rabbit Active 有着本质以及目标的区别。
 
 ---
 
 ### client
 
-目录包括不同平台的client代码，用于测试云端MQ环境是否正常
+目录包括不同平台的client代码，用于测试MQ环境
 
 ---
 
 ##  锻造最美之器
 
 ##  www.OS-Q.com     |    qitas@qitas.cn
-
-
-
-## Mosquitto
-
-Mosquitto is an open source implementation of a server for version 3.1 and
-3.1.1 of the MQTT protocol. It also includes a C and C++ client library, and
-the `mosquitto_pub` and `mosquitto_sub` utilities for publishing and
-subscribing.
 
 Then use `mosquitto_sub` to subscribe to a topic:
 
