@@ -57,7 +57,7 @@ MQ消息总线，是一种跨进程的通信机制，用于上下游传递消息
 
 ---
 
-### [ZeroMQ](hhttps://github.com/zeromq) 
+### [ZeroMQ](https://github.com/zeromq) 
 
 ZeroMQ号称是“史上最快的消息队列”，基于c语言开发的，实时流处理sorm的task之间的通信就是用的zeroMQ。选定为边缘端平台组件
 
@@ -73,18 +73,10 @@ zeromq的目标是成为网络协议栈的一部分、进而进军linux 内核 �
 
 ### client
 
-目录包括不同平台的client代码，用于测试MQ环境
+目录包括不同平台和边缘端设备的client代码，用于测试MQ环境
 
 ---
 
 ##  锻造最美之器
 
 ##  www.OS-Q.com     |    qitas@qitas.cn
-
-Then use `mosquitto_sub` to subscribe to a topic:
-
-    mosquitto_sub -t 'test/topic' -v
-
-And to publish a message:
-
-    mosquitto_pub -t 'test/topic' -m 'hello world'
