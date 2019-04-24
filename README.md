@@ -1,17 +1,23 @@
 ﻿# [MQ-Q](https://github.com/OS-Q/MQ-Q) 
 
 [![sites](OS-Q/OS-Q.png)](http://www.os-q.com)
-
-#### 边缘设备：[Edge](https://github.com/OS-Q/Edge-Q)
-#### 功能服务：[QaaS](https://github.com/OS-Q/QaaS)
-#### 系统交互：[UI-Q](https://github.com/OS-Q/UI-Q)
-#### 系统存储：[DB-Q](https://github.com/OS-Q/DB-Q)
-#### [系统通信：MQ-Q](https://github.com/OS-Q/MQ-Q)
-
+####  qitas@qitas.cn
+#### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
+- 边缘设备：[Edge](https://github.com/OS-Q/Edge-Q)
+- 功能服务：[QaaS](https://github.com/OS-Q/QaaS)
+- 系统交互：[UI-Q](https://github.com/OS-Q/UI-Q)
+- 系统存储：[DB-Q](https://github.com/OS-Q/DB-Q)
 
 ## [简介](https://github.com/OS-Q/MQ-Q/wiki)
 
 MQ-Q是Q系统组件间主要通信单元，通过消息队列的方式实现各个节点间的低耦合高并发通信连接
+
+
+### 相关平台
+
+- [OceanConnect](https://github.com/OceanConnect)
+
+---
 
 ### MQ(Message Queue)
 
