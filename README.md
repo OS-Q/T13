@@ -1,4 +1,4 @@
-﻿# [MQ-Q](https://github.com/OS-Q/MQ-Q) 
+﻿# [MQTT](https://github.com/OS-Q/MQTT) 
 
 [![sites](OS-Q/OS-Q.png)](http://www.os-q.com)
 ####  qitas@qitas.cn
@@ -8,16 +8,9 @@
 - 系统交互：[UI-Q](https://github.com/OS-Q/UI-Q)
 - 系统存储：[DB-Q](https://github.com/OS-Q/DB-Q)
 
-## [简介](https://github.com/OS-Q/MQ-Q/wiki)
+## [MQTT简介](https://github.com/OS-Q/MQTT/wiki)
 
-MQ-Q是Q系统组件间主要通信单元，通过消息队列的方式实现各个节点间的低耦合高并发通信连接
-
-
-### 相关平台
-
-- [OceanConnect](https://github.com/OceanConnect)
-
----
+MQTT是Q系统组件间主要通信单元，通过消息队列的方式实现各个节点间的低耦合高并发通信连接
 
 ### MQ(Message Queue)
 
@@ -43,31 +36,18 @@ MQ消息总线，是一种跨进程的通信机制，用于上下游传递消息
 
 * 不丢不重难以同时保证消息，可靠性和重复性互为矛盾
 
-
-### 关于架构：[OS-Q](https://github.com/OS-Q/OS-Q)
-
 ---
 
 
-# [Q1体系](https://github.com/OS-Q/Q1) 
-
-对于Q1控制体系而言，只作为client端和上侧单元进行数据交换，不需要提供Broker服务，所以更多的是基于C语言的平台连接
-
-### [embedded-c](https://github.com/eclipse/paho.mqtt.embedded-c) 
-
-### [paho.mqtt.c](https://github.com/eclipse/paho.mqtt.c) 
-
-Eclipse Paho MQTT C client library.
-
----
-
-# [Q2体系](https://github.com/OS-Q/Q2) 
-
-边缘通信设备，主要向边缘控制设备提供Broker服务，也属于资源受限设备
 
 ### [Mosquitto](https://github.com/eclipse/mosquitto) 
 
 An C open source MQTT broker 
+
+* [embedded-c](https://github.com/eclipse/paho.mqtt.embedded-c) 
+* [paho.mqtt.c](https://github.com/eclipse/paho.mqtt.c) 
+
+Eclipse Paho MQTT C client library.
 
 ### [ZeroMQ](https://github.com/zeromq) 
 
@@ -81,11 +61,6 @@ ZMQ(ZeroMQ)是一个简单好用的传输层，像框架一样的一个socket li
 
 zeromq的目标是成为网络协议栈的一部分、进而进军linux 内核 、所以与Rabbit Active 有着本质以及目标的区别。
 
----
-
-# [Q3体系](https://github.com/OS-Q/Q3) 
-
-边缘计算体系，用于向边缘通信和边缘控制设备提供Broker服务
 
 ### [RabbitMQ](https://github.com/rabbitmq) 
 
@@ -103,11 +78,6 @@ zeromq的目标是成为网络协议栈的一部分、进而进军linux 内核 �
 - consumer：消息消费者，就是接受消息的程序。
 - channel：消息通道，在客户端的每个连接里，可建立多个channel，每个channel代表一个会话任务。
 
----
-
-# [Q4体系](https://github.com/OS-Q/Q4) 
-
-弹性计算体系，用于处理临时并发数据流
 
 ### [Kafka](hhttps://github.com/apache/kafka) 
 
@@ -115,10 +85,8 @@ zeromq的目标是成为网络协议栈的一部分、进而进军linux 内核 �
 
 kafka的设计初衷是希望作为一个统一的信息收集平台,能够实时的收集反馈信息,并需要能够支撑较大的数据量,且具备良好的容错能力.
 
----
+### 公网云平台对接
 
-###  qitas@qitas.cn
+* [华为OceanConnect](https://github.com/OS-Q/OceanConnect)
 
-###  [Q redefined the scope of Operation System](http://www.OS-Q.com)
-
-####  2018-12-7
+### [OS-Q : Operation System for edge devices](http://www.OS-Q.com/MQTT)
