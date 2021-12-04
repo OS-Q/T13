@@ -1,14 +1,9 @@
-﻿# [FOC](https://github.com/OS-Q/W13)
+# [FoC](https://github.com/OS-Q/T13)
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
-### [FOC描述](https://github.com/OS-Q/W13/wiki)
+## 模板描述
 
-[FOC](https://github.com/OS-Q/W13)
+STM32 / MM32
 
-### [收录资源](https://github.com/OS-Q/)
-
-* [文档](docs/)
-* [工程](project/)
-
-### [OS-Q = Open Solutions | Open Source | Operating System ](http://www.OS-Q.com/FOC)
+* [SimpleFoC](https://github.com/simplefoc/Arduino-FOC)
